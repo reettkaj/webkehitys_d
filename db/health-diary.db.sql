@@ -36,6 +36,28 @@ CREATE TABLE Medications (
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
+CREATE TABLE Meals (
+    meal_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    meal_date DATE NOT NULL,
+    meal_type VARCHAR(50),       -- breakfast, lunch, dinner, snack
+    calories INT,
+    description TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+CREATE TABLE Symptoms (
+    symptom_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    symptom_date DATE NOT NULL,
+    symptom_name VARCHAR(100) NOT NULL,
+    severity INT CHECK (severity BETWEEN 1 AND 5),
+    notes TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
 CREATE TABLE Exercises (
     exercise_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -76,3 +98,13 @@ INSERT INTO Exercises (user_id, type, duration, intensity, date) VALUES
 (3, 'Swimming', 60, 'Low', '2024-01-18'),
 (3, 'Yoga', 50, 'Low', '2024-01-18'),
 (1, 'Weight Training', 40, 'High', '2024-01-19');
+
+INSERT INTO Meals (user_id, meal_date, meal_type, calories, description) VALUES
+(1, '2024-01-10', 'Breakfast', 450, 'Bread with peanutbutter'),
+(1, '2024-01-10', 'Dinner', 700, 'Chicken and rice'),
+(2, '2024-01-11', 'Lunch', 600, 'Teriyaki salmon');
+
+INSERT INTO Symptoms (user_id, symptom_date, symptom_name, severity, notes) VALUES
+(1, '2024-01-10', 'Headache', 3, 'Headache after a nap'),
+(2, '2024-01-11', 'Fatigue', 4, 'Very tired after work'),
+(3, '2024-01-12', 'Back pain', 2, 'Back pain from carrying heavy things');
