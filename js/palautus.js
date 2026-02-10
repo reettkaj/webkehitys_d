@@ -10,6 +10,16 @@ const hostname = '127.0.0.1';
 const app = express();
 const port = 3000;
 
+import {
+  getUsers,
+  postLogin,
+  postUser,
+  getUserById,
+  putUserById,
+  deleteUserById
+} from './users.js';
+
+
 // parsitaan json data pyynnöstä ja lisätään request-objektiin
 app.use(express.json());
 
@@ -46,14 +56,15 @@ app.post('/api/users/login', postLogin);
 // TODO: get user by id
 // TODO: put user by id
 // TODO: delete user by id
-import {
-  getUsers,
-  postLogin,
-  postUser,
-  getUserById,
-  putUserById,
-  deleteUserById
-} from './users.js';
+// GET user by id
+app.get('/api/users/:id', getUserById);
+
+// PUT user by id
+app.put('/api/users/:id', putUserById);
+
+// DELETE user by id
+app.delete('/api/users/:id', deleteUserById);
+
 
 // GET user by id
 app.get('/api/users/:id', getUserById);
