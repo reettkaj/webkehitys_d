@@ -37,3 +37,9 @@ userRouter.route('/:id')
   .delete(deleteUserById); // DELETE /api/users/:id
 
 export default userRouter;
+
+
+// ChatGPT:tä hyödynnettiin:
+// - Reittien jakamisessa omiin router-tiedostoihin
+// - RESTful-rakenteen (/api/users, /api/users/:id) toteutuksessa
+// - route('/')-ketjutuksen ymmärtämisessä

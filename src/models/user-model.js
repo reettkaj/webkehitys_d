@@ -74,11 +74,31 @@ const findUserByUsername = async (username) => {
   return rows[0];
 };
 
+const findUserById = async (id) => {
+  const [rows] = await promisePool.query(
+    'SELECT id, username, email FROM users WHERE id = ?',
+    [id]
+  );
+  return rows[0];
+};
+
+const listAllUsers = async () => {
+  const [rows] = await promisePool.query('SELECT * FROM Users');
+  return rows;
+};
+
 export {
   getAllUsers,
   getUserById,
   addUser,
   updateUser,
   deleteUser,
+  findUserById,
   findUserByUsername,
+  listAllUsers
 };
+
+// ChatGPT:tä on hyödynnetty  yleisesti user-modelissa:
+// - Async-tietokantafunktioiden rakenteessa
+// - Parametrisoitujen SQL-kyselyiden (prepared statements) kirjoittamisessa
+// - Tulosten palautusrakenteen suunnittelussa

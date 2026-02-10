@@ -50,3 +50,8 @@ const addEntry = async (entry) => {
 };
 
 export {listAllEntries, findEntryById, addEntry};
+
+// ChatGPT:tä hyödynnettiin:
+// - SELECT- ja INSERT-lauseiden kirjoittamisessa
+// - Prepared statement -rakenteen käytössä SQL-injektion estämiseksi
+// - Kyselyiden tulosten käsittelyssä

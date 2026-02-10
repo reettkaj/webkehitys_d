@@ -12,3 +12,5 @@ const pool = mysql.createPool({
 });
 const promisePool = pool.promise();
 export default promisePool;
+
+// Tekoälyä käytetty promise-pohjaisten kyselyiden (async/await) ymmärtämisessä

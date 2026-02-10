@@ -121,5 +121,11 @@ export {
   deleteUserById,
   postUser,
   postLogin,
-  getMe
+  getMe,
+  listAllUsers
 };
+// ChatGPT:tä hyödynnettiin:
+// - Async/await-rakenteen toteutuksessa
+// - MVC-rakenteen selkeyttämisessä
+// - REST-rajapinnan statuskoodien (200, 201, 400, 404, 500) käytössä
+// - Controllerin ja modelin yhdistämisessä

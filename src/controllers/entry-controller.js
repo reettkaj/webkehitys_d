@@ -48,3 +48,9 @@ const deleteEntry = (req, res) => {
 };
 
 export {getEntries, getEntryById, postEntry, putEntry, deleteEntry};
+
+// ChatGPT:tä hyödynnettiin:
+// - Async controller -rakenteessa
+// - Virheenkäsittelyn toteutuksessa
+// - Pyyntöjen validoinnissa
+// - Autentikoidun käyttäjän (req.user.user_id) yhdistämisessä tietokantaan

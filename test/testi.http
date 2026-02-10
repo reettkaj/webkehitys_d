@@ -34,8 +34,8 @@ POST {{apiurl}}/users
 Content-Type: application/json
 
 {
-  "username": "donald",
-  "password": "duck",
+  "username": "john",
+  "password": "doe",
   "email": "donald@example.com"
 }
 
