@@ -2,6 +2,7 @@
 // How to handle errors in controller?
 import promisePool from '../utils/database.js';
 
+// Päiväkirjamerkinnät
 const listAllEntries = async () => {
   try {
     const [rows] = await promisePool.query('SELECT * FROM DiaryEntries');
@@ -18,6 +19,7 @@ const listAllEntries = async () => {
   }
 };
 
+// Hakee tietyn päiväkirjamerkinnän
 const findEntryById = async (id) => {
   try {
     // prepared statement
@@ -34,17 +36,27 @@ const findEntryById = async (id) => {
   }
 };
 
+// Uusi päiväkirjamerkintä
 const addEntry = async (entry) => {
+
+  // Puretaan entry-objektista yksittäiset kentät
   const {user_id, entry_date, mood, weight, sleep_hours, notes} = entry;
+  // SQL-lause uuden rivin lisäämiseksi
+  // Käytetään placeholder-merkkejä (?) SQL-injektion estämiseksi
   const sql = `INSERT INTO DiaryEntries (user_id, entry_date, mood, weight, sleep_hours, notes)
                VALUES (?, ?, ?, ?, ?, ?)`;
+  // Parametrit samassa järjestyksessä kuin SQL-lauseessa
   const params = [user_id, entry_date, mood, weight, sleep_hours, notes];
   try {
+    // Suoritetaan tietokantakysely
     const result = await promisePool.execute(sql, params);
-    //console.log('insert result', result);
+    // Palautetaan lisätyn rivin id
+    // insertId tulee MySQL:n vastauksesta
     return {entry_id: result[0].insertId};
   } catch (e) {
+    // Jos tapahtuu virhe, tulostetaan se konsoliin
     console.error('error', e.message);
+    // Palautetaan virhe controllerille käsiteltäväksi
     return {error: e.message};
   }
 };
