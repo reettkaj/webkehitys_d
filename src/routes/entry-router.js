@@ -17,7 +17,7 @@ const entryRouter = express.Router();
 */
 
 entryRouter.route('/')
-  .get(getEntries) // Palauttaa kaikki merkinnät tietokannasta
+.get(authenticateToken, getEntries) // Palauttaa kaikki merkinnät tietokannasta
   .post(authenticateToken, postEntry); // Tarkistaa ensin JWT-tokenin, sitten lisää uuden merkinnän, käytetty ChatGPT:tä ymmärtämään
 
   /*

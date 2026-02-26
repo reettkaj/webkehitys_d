@@ -2,7 +2,6 @@ import express from 'express';
 import {
   getMe,
   getUsers,
-  postLogin,
   postUser,
   getUserById,
   putUserById,
@@ -15,16 +14,12 @@ const userRouter = express.Router();
 // Users resource endpoints
 userRouter.route('/')
 // GET all users
-.get(getUsers)
+.get(authenticateToken, getUsers)
 // POST new user
 .post(postUser);
 
-// POST user login
-userRouter.post('/login', postLogin);
-
 // Get user info based on token
 userRouter.get('/me', authenticateToken, getMe);
-
 
 // TODO: get user by id
 // app.get('/api/users/:id');
@@ -32,9 +27,9 @@ userRouter.get('/me', authenticateToken, getMe);
 // TODO: delete user by id
 // User by id endpoints
 userRouter.route('/:id')
-  .get(getUserById)      // GET /api/users/:id
-  .put(putUserById)      // PUT /api/users/:id
-  .delete(deleteUserById); // DELETE /api/users/:id
+  .get(getUserById)
+  .put(authenticateToken, putUserById)
+  .delete(authenticateToken, deleteUserById);
 
 export default userRouter;
 

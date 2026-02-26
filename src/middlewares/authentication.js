@@ -2,20 +2,25 @@ import jwt from 'jsonwebtoken';
 import 'dotenv/config';
 
 const authenticateToken = (req, res, next) => {
-  //console.log('authenticateToken', req.headers);
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
-  //console.log('token', token);
-  if (token == undefined) {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader) {
     return res.sendStatus(401);
   }
-  try {
-    req.user = jwt.verify(token, process.env.JWT_SECRET);
+
+  const token = authHeader.split(' ')[1];
+
+  jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+    if (err) {
+      console.log('token verification failed', err);
+      return res.sendStatus(403);
+    }
+
+    req.user = user;
     next();
-  } catch (error) {
-    console.log('token verification failed', error);
-    res.status(403).send({message: 'invalid token'});
-  }
+  });
 };
 
-export {authenticateToken};
+export { authenticateToken };
+
+console.log("VERIFY SECRET:", process.env.JWT_SECRET);

@@ -1,7 +1,7 @@
 # Test HTTP requests
 ### use with: REST Client extension
 @apiurl = http://localhost:3000/api
-
+@token = 
 ### GET all items
 GET {{apiurl}}/items
 
@@ -26,7 +26,11 @@ Content-Type: application/json
 ##############################
 ### users endpoints
 
-### Get all users
+### Get all users (with token)
+GET {{apiurl}}/users
+Authorization: Bearer {{token}}
+
+### Get all users (FAIL without token)
 GET {{apiurl}}/users
 
 ### Register new user
@@ -34,9 +38,9 @@ POST {{apiurl}}/users
 Content-Type: application/json
 
 {
-  "username": "john",
-  "password": "doe",
-  "email": "donald@example.com"
+  "username": "donald2",
+  "password": "duck",
+  "email": "donald2@example.com"
 }
 
 ### Register new user FAIL (email missing)
@@ -49,30 +53,39 @@ Content-Type: application/json
 }
 
 ### User login
-POST {{apiurl}}/users/login
+POST {{apiurl}}/auth/login
 Content-Type: application/json
 
 {
-  "username": "bob_brown",
-  "password": "hashed_password"
+  "username": "donald2",
+  "password": "duck"
 }
+
+### Get user info by token
+GET {{apiurl}}/users/me
+Authorization: Bearer {{token}}
 
 
 ##############################
 ### Diary entry endpoints
 
-### Get all entries
+### Get all entries (by user id in token)
 GET {{apiurl}}/entries
+Authorization: Bearer {{token}}
 
 ### Get entry by id
 GET {{apiurl}}/entries/6
 
+### Delete entry by id
+DELETE {{apiurl}}/entries/6
+Authorization: Bearer {{token}}
+
 ### Post new entry
 POST {{apiurl}}/entries
 Content-Type: application/json
+Authorization: Bearer {{token}}
 
 {
-  "user_id": 3,
   "entry_date": "2026-02-04",
   "mood": "really happy",
   "weight": 66,

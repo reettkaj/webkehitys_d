@@ -7,6 +7,8 @@ import entryRouter from './routes/entry-router.js';
 const hostname = '127.0.0.1';
 const app = express();
 const port = 3000;
+import authRouter from './routes/auth-router.js';
+import 'dotenv/config';
 
 // enable CORS requests
 app.use(cors());
@@ -28,6 +30,7 @@ app.use('/api/users', userRouter);
 // Diary entries resource router
 app.use('/api/entries', entryRouter);
 
+app.use('/api/auth', authRouter);
 
 // Dummy items resource
 app.use('/api/items', itemRouter);

@@ -1,17 +1,8 @@
 import {listAllEntries, findEntryById, addEntry} from "../models/entry-model.js";
 
 const getEntries = async (req, res) => {
-  // Kutsutaan modelin funktiota, joka hakee kaikki merkinnät
-  const result = await listAllEntries();
-
-  // Jos ei virhettä, palautetaan tulos JSON-muodossa
-  if (!result.error) {
-    res.json(result);
-  } else {
-    // Jos tapahtuu virhe, palautetaan status 500
-    res.status(500);
-    res.json(result);
-  }
+  const entries = await listAllEntriesByUserId(req.user.user_id);
+  res.json(entries);
 };
 
 const getEntryById = async (req, res) => {
@@ -55,14 +46,26 @@ const postEntry = async (req, res) => {
   }
 };
 
-const putEntry = (req, res) => {
-  // placeholder for future implementation
-  res.sendStatus(200);
+const putEntry = async (req, res) => {
+  const entryId = req.params.id;
+  const userId = req.user.user_id;
+
+  const affectedRows = await updateEntryById(entryId, userId, req.body);
+
+  if (affectedRows > 0) {
+    res.json({ message: 'entry updated' });
+  } else {
+    res.status(404).json({ message: 'entry not found or not authorized' });
+  }
 };
 
-const deleteEntry = (req, res) => {
-  // placeholder for future implementation
-  res.sendStatus(200);
+const deleteEntry = async (req, res) => {
+  const affectedRows = await removeEntryById(req.params.id, req.user.user_id);
+  if (affectedRows > 0) {
+    res.json({message: 'entry deleted'});
+  } else {
+    res.status(404).json({message: 'entry not found'});
+  }
 };
 
 export {getEntries, getEntryById, postEntry, putEntry, deleteEntry};

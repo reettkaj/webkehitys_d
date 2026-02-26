@@ -19,6 +19,17 @@ const listAllEntries = async () => {
   }
 };
 
+const listAllEntriesByUserId = async (id) => {
+  try {
+    const sql = 'SELECT * FROM DiaryEntries WHERE user_id = ?';
+    const [rows] = await promisePool.execute(sql, [id]);
+    return rows;
+  } catch (e) {
+    console.error('error', e.message);
+    return {error: e.message};
+  }
+};
+
 // Hakee tietyn päiväkirjamerkinnän
 const findEntryById = async (id) => {
   try {
@@ -61,7 +72,36 @@ const addEntry = async (entry) => {
   }
 };
 
-export {listAllEntries, findEntryById, addEntry};
+const removeEntryById = async (entryId, userId) => {
+  const sql = 'DELETE from DiaryEntries WHERE entry_id = ? AND user_id = ?';
+  const [result] = await promisePool.execute(sql, [entryId, userId]);
+  //console.log('remove entry by id', result);
+  return result.affectedRows;
+};
+
+const updateEntryById = async (entryId, userId, entry) => {
+  const { entry_date, mood, weight, sleep_hours, notes } = entry;
+
+  const sql = `
+    UPDATE DiaryEntries
+    SET entry_date = ?, mood = ?, weight = ?, sleep_hours = ?, notes = ?
+    WHERE entry_id = ? AND user_id = ?
+  `;
+
+  const [result] = await promisePool.execute(sql, [
+    entry_date,
+    mood,
+    weight,
+    sleep_hours,
+    notes,
+    entryId,
+    userId
+  ]);
+
+    return result.affectedRows;
+};
+
+export {listAllEntries, findEntryById, addEntry, listAllEntriesByUserId, removeEntryById, updateEntryById};
 
 // ChatGPT:tä hyödynnettiin:
 // - SELECT- ja INSERT-lauseiden kirjoittamisessa

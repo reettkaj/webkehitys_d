@@ -39,6 +39,18 @@ const addUser = async (user) => {
   return { user_id: result.insertId };
 };
 
+// Insert user
+export const insertUser = async (user) => {
+  const { username, password, email } = user;
+
+  const [result] = await promisePool.execute(
+    'INSERT INTO Users (username, password, email) VALUES (?, ?, ?)',
+    [username, password, email]
+  );
+
+  return { user_id: result.insertId, username, email };
+};
+
 // PUT /api/users/:id (optional)
 const updateUser = async (id, user) => {
   const { username, password, email, user_level } = user;
@@ -82,9 +94,20 @@ const findUserById = async (id) => {
   return rows[0];
 };
 
+// GET /api/users - list all users
 const listAllUsers = async () => {
-  const [rows] = await promisePool.query('SELECT * FROM Users');
+  const sql = 'SELECT username, created_at FROM Users';
+  const [rows] = await promisePool.query(sql);
   return rows;
+};
+
+// GET user by username
+export const getUserByUsername = async (username) => {
+  const [rows] = await promisePool.execute(
+    'SELECT * FROM Users WHERE username = ?',
+    [username]
+  );
+  return rows[0];
 };
 
 export {
