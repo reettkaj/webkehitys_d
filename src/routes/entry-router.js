@@ -7,9 +7,26 @@ import {
   deleteEntry
 } from '../controllers/entry-controller.js';
 import {authenticateToken} from '../middlewares/authentication.js';
+import { body, validationResult } from 'express-validator';
 
 // Luodaan uusi Express-router diary entry -reiteille
 const entryRouter = express.Router();
+
+const validateEntry = [
+  body('entry_date').notEmpty(),
+  body('weight').optional().isNumeric(),
+  body('sleep_hours').optional().isNumeric(),
+  body('mood').optional().isString(),
+  body('notes').optional().isString(),
+
+  (req, res, next) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    next();
+  }
+];
 
 /*
   GET    -> Hae kaikki päiväkirjamerkinnät
@@ -17,8 +34,12 @@ const entryRouter = express.Router();
 */
 
 entryRouter.route('/')
-.get(authenticateToken, getEntries) // Palauttaa kaikki merkinnät tietokannasta
-  .post(authenticateToken, postEntry); // Tarkistaa ensin JWT-tokenin, sitten lisää uuden merkinnän, käytetty ChatGPT:tä ymmärtämään
+  .get(authenticateToken, getEntries) // Palauttaa kaikki merkinnät tietokannasta
+  .post(
+    authenticateToken,
+    validateEntry,
+    postEntry
+  ); // Tarkistaa ensin JWT-tokenin, sitten lisää uuden merkinnän, käytetty ChatGPT:tä ymmärtämään
 
   /*
   Route: /api/entries/:id

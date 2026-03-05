@@ -1,23 +1,26 @@
 import express from 'express';
 import cors from 'cors';
+import authRouter from './routes/auth-router.js';
 import itemRouter from './routes/item-router.js';
 import userRouter from './routes/user-router.js';
 import requestLogger from './middlewares/logger.js';
 import entryRouter from './routes/entry-router.js';
+import { errorHandler, notFoundHandler } from './middlewares/error-handlers.js';
+
 const hostname = '127.0.0.1';
 const app = express();
 const port = 3000;
-import authRouter from './routes/auth-router.js';
-import 'dotenv/config';
 
-// enable CORS requests
+// enable CORS
 app.use(cors());
 
-// parsitaan json data pyynnöstä ja lisätään request-objektiin
+// parse JSON
 app.use(express.json());
-// tarjoillaan webbisivusto (front-end) palvelimen juuressa
+
+// static frontend
 app.use('/', express.static('public'));
-// Oma loggeri middleware, käytössä koko sovelluksen laajuisesti eli käsittee kaikki http-pyynnöt
+
+// logger
 app.use(requestLogger);
 
 // API root
@@ -25,15 +28,17 @@ app.get('/api', (req, res) => {
   res.send('Teacher example Health Diary API!');
 });
 
-// Users resource router for all /api/users routes
-app.use('/api/users', userRouter);
-// Diary entries resource router
-app.use('/api/entries', entryRouter);
-
+// ROUTERS
 app.use('/api/auth', authRouter);
-
-// Dummy items resource
+app.use('/api/users', userRouter);
+app.use('/api/entries', entryRouter);
 app.use('/api/items', itemRouter);
+
+// 404
+app.use(notFoundHandler);
+
+// error handler
+app.use(errorHandler);
 
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);

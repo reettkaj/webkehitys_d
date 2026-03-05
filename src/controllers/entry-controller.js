@@ -1,8 +1,22 @@
-import {listAllEntries, findEntryById, addEntry} from "../models/entry-model.js";
+import {
+  listAllEntriesByUserId,
+  findEntryById,
+  addEntry,
+  removeEntryById,
+  updateEntryById
+} from "../models/entry-model.js";
 
 const getEntries = async (req, res) => {
-  const entries = await listAllEntriesByUserId(req.user.user_id);
-  res.json(entries);
+  // haetaan kaikkien käyttäjien merkinnät
+  //const result = await listAllEntries();
+  // haetaan kirjautuneen (token) käyttäjän omat merkinnät
+  const result = await listAllEntriesByUserId(req.user.user_id);
+  if (!result.error) {
+    res.json(result);
+  } else {
+    res.status(500);
+    res.json(result);
+  }
 };
 
 const getEntryById = async (req, res) => {
@@ -19,30 +33,17 @@ const getEntryById = async (req, res) => {
 };
 
 const postEntry = async (req, res) => {
-  // Puretaan pyynnön body:sta tarvittavat kentät
-  const {entry_date, mood, weight, sleep_hours, notes} = req.body;
 
-  // user_id lisätään req-objektiin authenticateToken-middlewaresta
   const user_id = req.user.user_id;
 
-  // Tarkistetaan että pakolliset tiedot löytyvät
-  if (entry_date && (weight || mood || sleep_hours || notes) && user_id) {
+  const result = await addEntry({user_id, ...req.body});
 
-    // Lisätään uusi merkintä tietokantaan
-    const result = await addEntry({user_id, ...req.body});
-
-    // Jos lisäys onnistui ja saatiin entry_id takaisin
-    if (result.entry_id) {
-      res.status(201);
-      res.json({message: 'New entry added.', ...result});
-    } else {
-      // Jos tietokantavirhe
-      res.status(500);
-      res.json(result);
-    }
+  if (result.entry_id) {
+    res.status(201);
+    res.json({message: 'New entry added.', ...result});
   } else {
-    // Jos validointi epäonnistuu, palautetaan 400 Bad Request
-    res.sendStatus(400);
+    res.status(500);
+    res.json(result);
   }
 };
 

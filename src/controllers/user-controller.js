@@ -6,7 +6,6 @@ import {
   findUserByUsername,
   listAllUsers,
   findUserById,
-  addUser,
   updateUser,
   deleteUser,
   insertUser
@@ -86,6 +85,12 @@ const deleteUserById = async (req, res) => {
 
 const postUser = async (req, res) => {
   const { username, password, email } = req.body;
+
+  if (!username || !password || !email) {
+    return res.status(400).json({
+      error: "username, password and email required"
+    });
+  }
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
