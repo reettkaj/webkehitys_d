@@ -1,31 +1,43 @@
 import express from 'express';
+import { body } from 'express-validator';
+
 import {
-  getMe,
   getUsers,
-  postUser,
   getUserById,
   putUserById,
-  deleteUserById
+  deleteUserById,
+  postUser,
+  getMe
 } from '../controllers/user-controller.js';
-import {authenticateToken} from '../middlewares/authentication.js';
+
+import { authenticateToken } from '../middlewares/authentication.js';
 
 const userRouter = express.Router();
 
-// Users resource endpoints
-userRouter.route('/')
-// GET all users
-.get(authenticateToken, getUsers)
-// POST new user
-.post(postUser);
+/*
+Routes for /api/users
+*/
 
-// Get user info based on token
+// GET all users
+// POST new user (register)
+userRouter.route('/')
+  .get(getUsers)
+  .post(
+    body('email').trim().isEmail(),
+    body('username').trim().isLength({ min: 3, max: 20 }).isAlphanumeric(),
+    body('password').trim().isLength({ min: 8 }),
+    postUser
+  );
+
+/*
+Routes for /api/users/me
+Return user info from token
+*/
 userRouter.get('/me', authenticateToken, getMe);
 
-// TODO: get user by id
-// app.get('/api/users/:id');
-// TODO: put user by id
-// TODO: delete user by id
-// User by id endpoints
+/*
+Routes for /api/users/:id
+*/
 userRouter.route('/:id')
   .get(getUserById)
   .put(authenticateToken, putUserById)

@@ -1,7 +1,9 @@
 // HUOM: mokkidata on poistettu modelista
 //import users from '../models/user-model.js';
 
-import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
+import {validationResult} from 'express-validator';
+
 import {
   findUserByUsername,
   listAllUsers,
@@ -11,19 +13,17 @@ import {
   insertUser
 } from '../models/user-model.js';
 
-import bcrypt from 'bcryptjs';
-
 
 // TODO: lisää tietokantafunktiot user modeliin
 // ja käytä niitä täällä
 
 // TODO: refaktoroi tietokantafunktiolle
-const getUsers = async (req, res) => {
+const getUsers = async (req, res, next) => {
   try {
     const users = await listAllUsers();
     res.json(users);
   } catch (error) {
-    res.status(500).json({error: error.message});
+    next(error);
   }
 };
   // ÄLÄ IKINÄ lähetä salasanoja HTTP-vastauksessa
@@ -32,76 +32,118 @@ const getUsers = async (req, res) => {
 
 
 // TODO: getUserById
-const getUserById = async (req, res) => {
+const getUserById = async (req, res, next) => {
   try {
     const user = await findUserById(req.params.id);
+
     if (!user) {
-      return res.status(404).json({error: 'user not found'});
+      const error = new Error('user not found');
+      error.status = 404;
+      return next(error);
     }
+
     res.json(user);
+
   } catch (error) {
-    res.status(500).json({error: error.message});
+    next(error);
   }
 };
+
+
 // TODO: putUserById
-const putUserById = async (req, res) => {
+const putUserById = async (req, res, next) => {
+
   // Authorization check
   if (parseInt(req.params.id) !== req.user.user_id) {
-    return res.status(403).json({ error: 'You can update only your own account' });
+    const error = new Error('You can update only your own account');
+    error.status = 403;
+    return next(error);
   }
 
   try {
+
     const result = await updateUser(req.params.id, req.body);
+
     if (result === 0) {
-      return res.status(404).json({ error: 'user not found' });
+      const error = new Error('user not found');
+      error.status = 404;
+      return next(error);
     }
+
     res.json({ message: 'user updated' });
+
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    next(error);
   }
 };
+
 
 // TODO: deleteUserById
-const deleteUserById = async (req, res) => {
+const deleteUserById = async (req, res, next) => {
+
   if (parseInt(req.params.id) !== req.user.user_id) {
-    return res.status(403).json({ error: 'You can delete only your own account' });
+    const error = new Error('You can delete only your own account');
+    error.status = 403;
+    return next(error);
   }
 
   try {
+
     const result = await deleteUser(req.params.id);
+
     if (result === 0) {
-      return res.status(404).json({ error: 'user not found' });
+      const error = new Error('user not found');
+      error.status = 404;
+      return next(error);
     }
+
     res.json({ message: 'user deleted' });
+
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    next(error);
   }
 };
+
 
 // Käyttäjän lisäys (rekisteröityminen)
 // TODO: refaktoroi tietokantafunktiolle
 
 // Käyttäjän lisäys (rekisteröityminen)
+const postUser = async (req, res, next) => {
 
-const postUser = async (req, res) => {
-  const { username, password, email } = req.body;
+  // validation errors can be retrieved from the request object (added by express-validator middleware)
+  const errors = validationResult(req);
 
-  if (!username || !password || !email) {
-    return res.status(400).json({
-      error: "username, password and email required"
-    });
+  // check if any validation errors
+  if (!errors.isEmpty()) {
+    const error = new Error('Invalid or missing fields');
+    error.status = 400;
+    return next(error);
   }
 
-  const hashedPassword = await bcrypt.hash(password, 10);
+  try {
 
-  const user = await insertUser({
-    username,
-    password: hashedPassword,
-    email
-  });
+    const { username, password, email } = req.body;
 
-  res.status(201).json(user);
+    // password hashing
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const user = await insertUser({
+      username,
+      password: hashedPassword,
+      email
+    });
+
+    res.status(201).json({
+      message: 'new user added',
+      user_id: user.user_id
+    });
+
+  } catch (error) {
+    next(error);
+  }
 }; // ChatGPT - GPT-5 malli auttoi korjaamaan tämän
+
 
   // Uusilla käyttäjillä pitää olla kaikki vaaditut ominaisuudet tai palautetaan virhe
 
@@ -124,8 +166,12 @@ export {
   getMe,
   listAllUsers
 };
+
+
 // ChatGPT:tä hyödynnettiin:
 // - Async/await-rakenteen toteutuksessa
 // - MVC-rakenteen selkeyttämisessä
 // - REST-rajapinnan statuskoodien (200, 201, 400, 404, 500) käytössä
 // - Controllerin ja modelin yhdistämisessä
+// - express-validator validoinnin lisäämisessä
+// - error handler middleware -rakenteen refaktoroinnissa

@@ -12,6 +12,7 @@ import { body, validationResult } from 'express-validator';
 // Luodaan uusi Express-router diary entry -reiteille
 const entryRouter = express.Router();
 
+// Määrittelyjä 
 const validateEntry = [
   body('entry_date').notEmpty(),
   body('weight').optional().isNumeric(),
@@ -19,6 +20,7 @@ const validateEntry = [
   body('mood').optional().isString(),
   body('notes').optional().isString(),
 
+  // - Virheenkäsittelyä -
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
