@@ -38,3 +38,24 @@ Referenssit, tutoriaalit, grafiikkakirjastot:
   ChatGPT:n avulla youtube videoiden tukena, jonka avulla sain tehokkaasti hoidettua ne. Käytetty opettajien materiaaleja avuksi ja pohjaksi omiin koodeihin: https://github.com/mattpe/hyte-web-dev/blob/main/README.md ja https://github.com/UllaSe/wsk-hyte-fe-material-k26/blob/main/README.md. 
 
 Tekoälyn käyttö: Osaan koodista ollaan hyödynntetty ChatGPT GPT-5-mallia auttamaan koodin rakenteessa, selityksessä, muokkauksessa ja hahmottamaam koodia. Tätä mallia ollaan myös hyödynnetty debuggaamiseen, ja koodiongelmien korjauksiin.
+
+
+
+
+
+
+
+---------------------------------------------------------------------------TESTAUS-------------------------------------------------------------------------------------------
+
+Tehtävä 1: Latasin koneelleni seuraavat työkalut seuraamalla ohjeita 0.1_asennukset.md tiedostosta:
+- Robot Framework
+- Browser Library
+- Requests library
+- CryptoLibrary
+- Robotidy
+  Ensin etsin oikeat komennot niiden lataamiseen, ja pistin komennot VScoden terminaaliin. Lataaminen oli helppoa, ja tässä on komennot jota käytin:
+  pip install robotframework
+  pip install robotframework-browser
+  pip install robotframework-requests
+  pip install --upgrade robotframework-crypto
+  pip install robotframework-tidy
