@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-08T14:23:04.637057" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava5" source="C:\Users\reett\Documents\webkehitys_m\tests\tehtava5.robot">
+<test id="s1-t1" name="Login envistä" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-08T14:23:05.512244" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\tests\\browser\\traces\\temp\\f8fc0104-362b-46aa-b10d-331e9a591e8a"}</msg>
+<msg time="2026-04-08T14:23:05.632495" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:65280</msg>
+<msg time="2026-04-08T14:23:08.669908" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\tests\\browser\\traces\\temp\\f8fc0104-362b-46aa-b10d-331e9a591e8a"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-08T14:23:05.510340" elapsed="3.160022"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-08T14:23:10.040938" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-08T14:23:10.041181" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-08T14:23:08.672685" elapsed="1.369199"/>
+</kw>
+<kw name="Get Username">
+<msg time="2026-04-08T14:23:10.051979" level="FAIL">No keyword with name 'Get Username' found.</msg>
+<var>${username}</var>
+<status status="FAIL" start="2026-04-08T14:23:10.051242" elapsed="0.001003">No keyword with name 'Get Username' found.</status>
+</kw>
+<kw name="Get Password">
+<var>${password}</var>
+<status status="NOT RUN" start="2026-04-08T14:23:10.053661" elapsed="0.000828"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[name="username"] &gt;&gt; nth=1</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-08T14:23:10.056215" elapsed="0.000696"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>input[type="password"] &gt;&gt; nth=1</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-08T14:23:10.058390" elapsed="0.000673"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>text=Login &gt;&gt; nth=1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-08T14:23:10.060420" elapsed="0.000619"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>text=Logout</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-08T14:23:10.062283" elapsed="0.000530"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-04-08T14:23:10.063891" elapsed="0.000483"/>
+</kw>
+<msg time="2026-04-08T14:23:10.181722" level="INFO">Switching context to context=d007aeb2-b95b-40f6-86ac-ee53a7a2d5c9 in CURRENT</msg>
+<msg time="2026-04-08T14:23:10.213790" level="INFO">Successfully changed active context: context=d007aeb2-b95b-40f6-86ac-ee53a7a2d5c9</msg>
+<msg time="2026-04-08T14:23:10.296261" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-04-08T14:23:05.507963" elapsed="4.558880">No keyword with name 'Get Username' found.</status>
+</test>
+<status status="FAIL" start="2026-04-08T14:23:04.643662" elapsed="5.656641"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava5" id="s1" pass="0" fail="1" skip="0">Tehtava5</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-08T14:23:05.502244" level="ERROR">Error in file 'C:\Users\reett\Documents\webkehitys_m\tests\tehtava5.robot' on line 3: Library 'env_helper.py' does not exist.</msg>
+</errors>
+</robot>

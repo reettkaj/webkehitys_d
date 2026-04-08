@@ -1,0 +1,212 @@
+{"level":30,"time":"2026-04-08T12:07:24.700Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Listening on 127.0.0.1:54334"}
+{"level":30,"time":"2026-04-08T12:07:24.905Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:25.223Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-08T12:07:25.224Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-08T12:07:25.224Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:25.247Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:25.248Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@0f6b92b50edca029db606404d2677fae\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=b807ea9c-b50f-4f01-9a78-e6b76131bf21\"}"}
+{"level":30,"time":"2026-04-08T12:07:25.303Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=508485a4-a707-4b7f-ad56-e4ff8693518a to 10000"}
+{"level":30,"time":"2026-04-08T12:07:25.304Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=508485a4-a707-4b7f-ad56-e4ff8693518a"}
+{"level":30,"time":"2026-04-08T12:07:25.731Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-08T12:07:25.732Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-08T12:07:26.186Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:26.191Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:26.191Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[name=\"username\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:26.242Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:26.246Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:26.246Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:26.258Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:26.264Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-08T12:07:26.265Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Login >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:27.428Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-08T12:07:27.444Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:27.446Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Logout in page."}
+{"level":30,"time":"2026-04-08T12:07:29.381Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:29.389Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-08T12:07:29.389Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with a[href=\"paivakirja.html\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.542Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-08T12:07:29.552Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:29.553Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Lisää päiväkirjamerkintä in page."}
+{"level":30,"time":"2026-04-08T12:07:29.592Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:29.602Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.602Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[type=\"date\"] >> nth=0 in page."}
+{"level":30,"time":"2026-04-08T12:07:29.622Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.631Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.631Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Mood\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.681Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.687Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.687Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Weight (kg)\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.744Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.752Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.752Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Sleep hours\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.804Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.809Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.809Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Energy level (1-10)\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.825Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.833Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.833Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Water (liters)\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.843Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.855Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.855Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Stress level (1-10)\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.869Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.875Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.875Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Exercise\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.893Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.902Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.902Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Meal\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.916Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.920Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.920Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Symptoms\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.934Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.939Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:29.939Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[placeholder=\"Medication\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:29.958Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:30.970Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-08T12:07:30.970Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with css=button[type=\"submit\"] in page."}
+{"level":30,"time":"2026-04-08T12:07:31.017Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-08T12:07:31.023Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+{"level":30,"time":"2026-04-08T12:07:31.024Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with body in page."}
+{"level":30,"time":"2026-04-08T12:07:31.082Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Retrieved text for element body containing HyteGym\nKoti\nBMI laskuri\nViikkotehtävät\nPäiväkirja\nHei Käyttäjä: moikaikki Logout\nPäiväkirja\nHae päiväkirjamerkinnät\nLisää päiväkirjamerkintä\nLisää merkintä\n\nCopyright, RK"}
+{"level":30,"time":"2026-04-08T12:07:31.082Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getText"}
+{"level":30,"time":"2026-04-08T12:07:31.098Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+{"level":30,"time":"2026-04-08T12:07:31.098Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with body in page."}
+{"level":30,"time":"2026-04-08T12:07:31.138Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Retrieved text for element body containing HyteGym\nKoti\nBMI laskuri\nViikkotehtävät\nPäiväkirja\nHei Käyttäjä: moikaikki Logout\nPäiväkirja\nHae päiväkirjamerkinnät\nLisää päiväkirjamerkintä\nLisää merkintä\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n3/9/2026\n\nMood: 67\n\nWeight: 7.00 kg\n\nSleep: 7 h\n\nEnergy: 7\n\nWater: 7.0 L\n\nStress: 7\n\nExercise: 7\n\nMeal: 7\n\nSymptom: 7\n\nMedication: 7\n\nAvaa\nDelete\n3/9/2026\n\nMood: test\n\nWeight: 1.00 kg\n\nSleep: 1 h\n\nEnergy: 1\n\nWater: 1.0 L\n\nStress: 1\n\nExercise: 1\n\nMeal: 1\n\nSymptom: 1\n\nMedication: 1\n\nAvaa\nDelete\n3/8/2026\n\nMood: 67\n\nWeight: 7.00 kg\n\nSleep: 7 h\n\nEnergy: 7\n\nWater: 7.0 L\n\nStress: 7\n\nExercise: 7\n\nMeal: 7\n\nSymptom: 7\n\nMedication: 7\n\nAvaa\nDelete\n\nCopyright, RK"}
+{"level":30,"time":"2026-04-08T12:07:31.138Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getText"}
+{"level":30,"time":"2026-04-08T12:07:31.145Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-04-08T12:07:31.171Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Removed page=7f144e29-204c-4d47-947b-30defdeb4020 from context=508485a4-a707-4b7f-ad56-e4ff8693518a page stack"}
+{"level":30,"time":"2026-04-08T12:07:31.503Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-08T12:07:31.513Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.513Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-08T12:07:31.519Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.519Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.543Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.543Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.547Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.547Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:31.551Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:31.850Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-08T12:07:31.850Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-08T12:07:31.850Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:31.863Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:31.863Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@7923e17df2f98d7c621aa6e7b83fa25a\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=992dae08-f0cf-4c40-8f41-ed96ee3f3449\"}"}
+{"level":30,"time":"2026-04-08T12:07:31.884Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=423cb0b8-c671-4838-9783-f23f1a388ced to 10000"}
+{"level":30,"time":"2026-04-08T12:07:31.884Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=423cb0b8-c671-4838-9783-f23f1a388ced"}
+{"level":30,"time":"2026-04-08T12:07:32.273Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-08T12:07:32.273Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-08T12:07:32.750Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:32.758Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:32.758Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[name=\"username\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:32.812Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:32.848Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:32.849Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:32.862Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:32.867Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-08T12:07:32.867Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Login >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:33.324Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-08T12:07:33.329Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:33.330Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Logout in page."}
+{"level":30,"time":"2026-04-08T12:07:35.225Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:35.230Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-04-08T12:07:35.242Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Removed page=6071b1a8-ab5a-49cd-9a73-77820434fa97 from context=423cb0b8-c671-4838-9783-f23f1a388ced page stack"}
+{"level":30,"time":"2026-04-08T12:07:35.637Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-08T12:07:35.643Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:35.643Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12757:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13677:59)
+    at PlaywrightServer.setTimeout (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13933:56)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-08T12:07:35.650Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:35.650Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:35.867Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:35.867Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:36.459Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:36.459Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:36.466Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:36.747Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-08T12:07:36.747Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-08T12:07:36.747Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:36.770Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:36.770Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@c101f959b76350b1867217505ac845d0\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=82ad5606-2818-4d6e-a7dc-d97d19470af8\"}"}
+{"level":30,"time":"2026-04-08T12:07:36.835Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=93ab0362-7edb-4f28-afc3-d05b356f2066 to 10000"}
+{"level":30,"time":"2026-04-08T12:07:36.836Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=93ab0362-7edb-4f28-afc3-d05b356f2066"}
+{"level":30,"time":"2026-04-08T12:07:37.208Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-08T12:07:37.209Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-08T12:07:37.707Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:37.712Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:37.712Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[name=\"username\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:37.766Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:37.769Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:37.770Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with input[type=\"password\"] >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:37.780Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-08T12:07:37.784Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-08T12:07:37.784Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Login >> nth=1 in page."}
+{"level":30,"time":"2026-04-08T12:07:39.332Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-08T12:07:39.335Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:39.335Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with text=Logout in page."}
+{"level":30,"time":"2026-04-08T12:07:41.277Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-08T12:07:41.295Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.301Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.307Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.310Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.314Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.316Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.323Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.325Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.328Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=93ab0362-7edb-4f28-afc3-d05b356f2066"}
+{"level":30,"time":"2026-04-08T12:07:41.328Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changing current active page: page=721ff20e-2df5-45b3-8504-b2851c2d918a"}
+{"level":30,"time":"2026-04-08T12:07:41.328Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-08T12:07:41.331Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-08T12:07:41.342Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Removed page=562078ae-c40f-4a36-88aa-40db0b52df9c from context=93ab0362-7edb-4f28-afc3-d05b356f2066 page stack"}
+{"level":30,"time":"2026-04-08T12:07:41.361Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-08T12:07:41.369Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.369Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-08T12:07:41.494Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-08T12:07:41.913Z","pid":22532,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method closeAllBrowsers"}

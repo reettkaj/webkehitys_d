@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-08T15:04:20.303706" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava4" source="C:\Users\reett\Documents\webkehitys_m\tests\tehtava4.robot">
+<test id="s1-t1" name="Lisää päiväkirjamerkintä onnistuneesti" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-08T15:04:20.706594" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava4\\browser\\traces\\temp\\35263ebf-05bf-4471-82f6-dc583f32ac63"}</msg>
+<msg time="2026-04-08T15:04:20.746001" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60917</msg>
+<msg time="2026-04-08T15:04:22.197421" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava4\\browser\\traces\\temp\\35263ebf-05bf-4471-82f6-dc583f32ac63"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-08T15:04:20.705891" elapsed="1.491863"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-08T15:04:23.114018" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-08T15:04:23.114102" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-08T15:04:22.216042" elapsed="0.898232"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:23.115489" level="INFO">Fills the text 'moikaikki' in the given field.</msg>
+<arg>input[name="username"] &gt;&gt; nth=1</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:23.114706" elapsed="0.055101"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:23.170857" level="INFO">Fills the text '12345678' in the given field.</msg>
+<arg>input[type="password"] &gt;&gt; nth=1</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:23.170201" elapsed="0.018125"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-08T15:04:23.189519" level="INFO">Clicks the element 'text=Login &gt;&gt; nth=1'.</msg>
+<arg>text=Login &gt;&gt; nth=1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:23.188766" elapsed="0.617421"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-08T15:04:25.727146" level="INFO">Waited for Element with selector text=Logout at state visible</msg>
+<arg>text=Logout</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-08T15:04:23.807499" elapsed="1.919951"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-08T15:04:25.729138" level="INFO">Clicks the element 'a[href="paivakirja.html"]'.</msg>
+<arg>a[href="paivakirja.html"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:25.728132" elapsed="0.149576"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-08T15:04:25.929594" level="INFO">Waited for Element with selector text=Lisää päiväkirjamerkintä at state visible</msg>
+<arg>text=Lisää päiväkirjamerkintä</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-08T15:04:25.878445" elapsed="0.051499"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:25.932815" level="INFO">Fills the text '2026-04-08' in the given field.</msg>
+<arg>input[type="date"] &gt;&gt; nth=0</arg>
+<arg>2026-04-08</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:25.930839" elapsed="0.052979"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:25.986470" level="INFO">Fills the text 'Hyvä' in the given field.</msg>
+<arg>input[placeholder="Mood"]</arg>
+<arg>Hyvä</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:25.984914" elapsed="0.048818"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.036025" level="INFO">Fills the text '70' in the given field.</msg>
+<arg>input[placeholder="Weight (kg)"]</arg>
+<arg>70</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.034695" elapsed="0.068420"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.105352" level="INFO">Fills the text '8' in the given field.</msg>
+<arg>input[placeholder="Sleep hours"]</arg>
+<arg>8</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.104147" elapsed="0.020971"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.126495" level="INFO">Fills the text '7' in the given field.</msg>
+<arg>input[placeholder="Energy level (1-10)"]</arg>
+<arg>7</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.125611" elapsed="0.020613"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.149818" level="INFO">Fills the text '2' in the given field.</msg>
+<arg>input[placeholder="Water (liters)"]</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.146709" elapsed="0.023692"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.172637" level="INFO">Fills the text '3' in the given field.</msg>
+<arg>input[placeholder="Stress level (1-10)"]</arg>
+<arg>3</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.171819" elapsed="0.017166"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.190621" level="INFO">Fills the text 'Juoksu' in the given field.</msg>
+<arg>input[placeholder="Exercise"]</arg>
+<arg>Juoksu</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.189388" elapsed="0.020563"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.211034" level="INFO">Fills the text 'Kana' in the given field.</msg>
+<arg>input[placeholder="Meal"]</arg>
+<arg>Kana</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.210418" elapsed="0.024334"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.237604" level="INFO">Fills the text 'Ei' in the given field.</msg>
+<arg>input[placeholder="Symptoms"]</arg>
+<arg>Ei</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.236600" elapsed="0.018070"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:26.256041" level="INFO">Fills the text 'Ei' in the given field.</msg>
+<arg>input[placeholder="Medication"]</arg>
+<arg>Ei</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.255118" elapsed="0.027754"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-08T15:04:27.286014" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-08T15:04:26.284269" elapsed="1.002114"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-08T15:04:27.289723" level="INFO">Clicks the element 'css=button[type="submit"]'.</msg>
+<arg>css=button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:27.287683" elapsed="0.058841"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2026-04-08T15:04:27.528268" level="INFO">Text: 'HyteGym\nKoti\nBMI laskuri\nViikkotehtävät\nPäiväkirja\nHei Käyttäjä: moikaikki Logout\nPäiväkirja\nHae päiväkirjamerkinnät\nLisää päiväkirjamerkintä\nLisää merkintä\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n4/8/2026\n\nMood: Hyvä\n\nWeight: 70.00 kg\n\nSleep: 8 h\n\nEnergy: 7\n\nWater: 2.0 L\n\nStress: 3\n\nExercise: Juoksu\n\nMeal: Kana\n\nSymptom: Ei\n\nMedication: Ei\n\nAvaa\nDelete\n3/9/2026\n\nMood: 67\n\nWeight: 7.00 kg\n\nSleep: 7 h\n\nEnergy: 7\n\nWater: 7.0 L\n\nStress: 7\n\nExercise: 7\n\nMeal: 7\n\nSymptom: 7\n\nMedication: 7\n\nAvaa\nDelete\n3/9/2026\n\nMood: test\n\nWeight: 1.00 kg\n\nSleep: 1 h\n\nEnergy: 1\n\nWater: 1.0 L\n\nStress: 1\n\nExercise: 1\n\nMeal: 1\n\nSymptom: 1\n\nMedication: 1\n\nAvaa\nDelete\n3/8/2026\n\nMood: 67\n\nWeight: 7.00 kg\n\nSleep: 7 h\n\nEnergy: 7\n\nWater: 7.0 L\n\nStress: 7\n\nExercise: 7\n\nMeal: 7\n\nSymptom: 7\n\nMedication: 7\n\nAvaa\nDelete\n\nCopyright, RK'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Hyvä</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:27.347230" elapsed="0.181215"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-08T15:04:27.951510" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-08T15:04:27.528824" elapsed="0.423036"/>
+</kw>
+<status status="PASS" start="2026-04-08T15:04:20.704922" elapsed="7.247456"/>
+</test>
+<status status="PASS" start="2026-04-08T15:04:20.306051" elapsed="7.654494"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava4" id="s1" pass="1" fail="0" skip="0">Tehtava4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

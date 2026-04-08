@@ -1,28 +1,12 @@
-{"level":30,"time":"2026-03-24T08:35:56.114Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Listening on 127.0.0.1:49441"}
-{"level":30,"time":"2026-03-24T08:35:56.503Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-03-24T08:35:58.676Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
-{"level":30,"time":"2026-03-24T08:35:58.677Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-03-24T08:35:58.677Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-03-24T08:35:58.690Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-03-24T08:35:58.692Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@1ed5d43dfbe33220aaee50436300729d\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=a97e6168-dccc-41ae-b976-dee448a12152\"}"}
-{"level":30,"time":"2026-03-24T08:35:58.757Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=5fe2d766-ccde-4e24-b107-e9cf821f5def to 10000"}
-{"level":30,"time":"2026-03-24T08:35:58.758Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=5fe2d766-ccde-4e24-b107-e9cf821f5def"}
-{"level":30,"time":"2026-03-24T08:35:59.244Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
-{"level":30,"time":"2026-03-24T08:35:59.245Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
-{"level":30,"time":"2026-03-24T08:35:59.525Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
-{"level":30,"time":"2026-03-24T08:35:59.572Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
-{"level":30,"time":"2026-03-24T08:35:59.573Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
-{"level":30,"time":"2026-03-24T08:36:02.052Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
-{"level":30,"time":"2026-03-24T08:36:02.077Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
-{"level":30,"time":"2026-03-24T08:36:02.078Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
-{"level":30,"time":"2026-03-24T08:36:03.512Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
-{"level":30,"time":"2026-03-24T08:36:03.522Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
-{"level":30,"time":"2026-03-24T08:36:03.522Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
-{"level":30,"time":"2026-03-24T08:36:08.300Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
-{"level":30,"time":"2026-03-24T08:36:08.313Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
-{"level":30,"time":"2026-03-24T08:36:08.314Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with button in page."}
-{"level":30,"time":"2026-03-24T08:36:10.432Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
-{"level":30,"time":"2026-03-24T08:36:10.450Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
-{"level":30,"time":"2026-03-24T08:36:10.451Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with id=message in page."}
-{"level":30,"time":"2026-03-24T08:36:10.639Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"Retrieved text for element id=message containing Received!"}
-{"level":30,"time":"2026-03-24T08:36:10.639Z","pid":30224,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method getText"}
+{"level":30,"time":"2026-04-08T12:07:21.454Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Listening on 127.0.0.1:49554"}
+{"level":30,"time":"2026-04-08T12:07:21.992Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:22.295Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-08T12:07:22.296Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-08T12:07:22.296Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-08T12:07:22.305Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-08T12:07:22.306Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@b23d592655b731f84ab87b526d2cdd32\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=21737a37-39eb-499d-99a4-759ecba8d8e3\"}"}
+{"level":30,"time":"2026-04-08T12:07:22.346Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=23c9da79-1538-48fa-a415-a2f92a56f627 to 10000"}
+{"level":30,"time":"2026-04-08T12:07:22.346Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=23c9da79-1538-48fa-a415-a2f92a56f627"}
+{"level":30,"time":"2026-04-08T12:07:22.713Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-08T12:07:22.713Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-08T12:07:23.514Z","pid":28420,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}

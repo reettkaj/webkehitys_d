@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-08T15:04:28.725049" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava5" source="C:\Users\reett\Documents\webkehitys_m\tests\tehtava5.robot">
+<test id="s1-t1" name="Login envistä" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-08T15:04:29.031253" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava5\\browser\\traces\\temp\\9ba0802f-580e-4939-baaa-f379017c1737"}</msg>
+<msg time="2026-04-08T15:04:29.063483" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:53770</msg>
+<msg time="2026-04-08T15:04:30.442242" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava5\\browser\\traces\\temp\\9ba0802f-580e-4939-baaa-f379017c1737"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-08T15:04:29.030539" elapsed="1.412139"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-08T15:04:31.255913" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-08T15:04:31.256026" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-08T15:04:30.448400" elapsed="0.807832"/>
+</kw>
+<kw name="Get Username" owner="env_helper">
+<msg time="2026-04-08T15:04:31.256964" level="INFO">USERNAME: moikaikki</msg>
+<msg time="2026-04-08T15:04:31.257111" level="INFO">${username} = moikaikki</msg>
+<var>${username}</var>
+<status status="PASS" start="2026-04-08T15:04:31.256641" elapsed="0.000512"/>
+</kw>
+<kw name="Get Password" owner="env_helper">
+<msg time="2026-04-08T15:04:31.257663" level="INFO">PASSWORD: 12345678</msg>
+<msg time="2026-04-08T15:04:31.257786" level="INFO">${password} = 12345678</msg>
+<var>${password}</var>
+<status status="PASS" start="2026-04-08T15:04:31.257425" elapsed="0.000399"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:31.259321" level="INFO">Fills the text 'moikaikki' in the given field.</msg>
+<arg>input[name="username"] &gt;&gt; nth=1</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:31.258412" elapsed="0.058089"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:31.317593" level="INFO">Fills the text '12345678' in the given field.</msg>
+<arg>input[type="password"] &gt;&gt; nth=1</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:31.316885" elapsed="0.015667"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-08T15:04:31.333775" level="INFO">Clicks the element 'text=Login &gt;&gt; nth=1'.</msg>
+<arg>text=Login &gt;&gt; nth=1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:31.333014" elapsed="0.583302"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-08T15:04:33.826289" level="INFO">Waited for Element with selector text=Logout at state visible</msg>
+<arg>text=Logout</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-08T15:04:31.917258" elapsed="1.909339"/>
+</kw>
+<kw name="Close Browser" owner="Browser">
+<msg time="2026-04-08T15:04:34.395585" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-08T15:04:33.827281" elapsed="0.568538"/>
+</kw>
+<status status="PASS" start="2026-04-08T15:04:29.029523" elapsed="5.366790"/>
+</test>
+<status status="PASS" start="2026-04-08T15:04:28.726847" elapsed="5.676397"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava5" id="s1" pass="1" fail="0" skip="0">Tehtava5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
