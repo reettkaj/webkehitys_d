@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-19T13:12:14.701215" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test" source="C:\Users\reett\Documents\webkehitys_m\tests\api_test.robot">
+<kw name="Create Session" owner="RequestsLibrary" type="SETUP">
+<msg time="2026-04-19T13:12:18.877063" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>jsonplaceholder</arg>
+<arg>https://jsonplaceholder.typicode.com</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-04-19T13:12:18.876611" elapsed="0.001686"/>
+</kw>
+<test id="s1-t1" name="Get Post" line="9">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-04-19T13:12:19.521282" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts/1 
+ path_url=/posts/1 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-04-19T13:12:19.521875" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts/1 
+ status=200, reason=OK 
+ headers={'Date': 'Sun, 19 Apr 2026 10:12:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=3ZmQ%2Fx2UXKJgfPvFuojDrXiFoWfYg4%2BhGCvZPAEvC5Q%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1776508518"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=3ZmQ%2Fx2UXKJgfPvFuojDrXiFoWfYg4%2BhGCvZPAEvC5Q%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1776508518"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1776508552', 'Age': '27025', 'cf-cache-status': 'HIT', 'Content-Encoding': 'gzip', 'CF-RAY': '9eeb2147ae7a8d88-HEL', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+} 
+ </msg>
+<msg time="2026-04-19T13:12:19.522238" level="INFO">C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-04-19T13:12:19.523356" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<var>${resp}</var>
+<arg>jsonplaceholder</arg>
+<arg>/posts/1</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-19T13:12:18.879826" elapsed="0.643694"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${resp}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.524531" elapsed="0.001000"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${resp.json()}</arg>
+<arg>id</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.526434" elapsed="0.002244"/>
+</kw>
+<status status="PASS" start="2026-04-19T13:12:18.878669" elapsed="0.650917"/>
+</test>
+<test id="s1-t2" name="Create Post" line="14">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-04-19T13:12:19.536379" level="INFO">&amp;{data} = { title=Test | body=Test body | userId=1 }</msg>
+<var>&amp;{data}</var>
+<arg>title=Test</arg>
+<arg>body=Test body</arg>
+<arg>userId=1</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.533465" elapsed="0.003075"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-04-19T13:12:19.775797" level="INFO">POST Request : url=https://jsonplaceholder.typicode.com/posts 
+ path_url=/posts 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '53', 'Content-Type': 'application/json'} 
+ body=b'{"title": "Test", "body": "Test body", "userId": "1"}' 
+ </msg>
+<msg time="2026-04-19T13:12:19.776150" level="INFO">POST Response : url=https://jsonplaceholder.typicode.com/posts 
+ status=201, reason=Created 
+ headers={'Date': 'Sun, 19 Apr 2026 10:12:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '74', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'access-control-expose-headers': 'Location', 'Cache-Control': 'no-cache', 'etag': 'W/"4a-cDlrZVBI9QpbZQgGmKNlfTPg0cg"', 'expires': '-1', 'location': 'https://jsonplaceholder.typicode.com/posts/101', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Anu3VEHXXsaKUVp9Gl%2Bg5VyKa5jQGix6r0yjkTPls1s%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1776593537"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=Anu3VEHXXsaKUVp9Gl%2Bg5VyKa5jQGix6r0yjkTPls1s%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1776593537"', 'Server': 'cloudflare', 'vary': 'Origin, X-HTTP-Method-Override, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '999', 'x-ratelimit-reset': '1776593539', 'cf-cache-status': 'DYNAMIC', 'CF-RAY': '9eeb21487f5d8d88-HEL', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "title": "Test",
+  "body": "Test body",
+  "userId": "1",
+  "id": 101
+} 
+ </msg>
+<msg time="2026-04-19T13:12:19.776421" level="INFO">C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-04-19T13:12:19.777367" level="INFO">${resp} = &lt;Response [201]&gt;</msg>
+<var>${resp}</var>
+<arg>jsonplaceholder</arg>
+<arg>/posts</arg>
+<arg>json=${data}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.537580" elapsed="0.239940"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${resp}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.778483" elapsed="0.000870"/>
+</kw>
+<status status="PASS" start="2026-04-19T13:12:19.531827" elapsed="0.248321"/>
+</test>
+<test id="s1-t3" name="Invalid Endpoint" line="19">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-04-19T13:12:20.215009" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/invalid 
+ path_url=/invalid 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-04-19T13:12:20.215933" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/invalid 
+ status=404, reason=Not Found 
+ headers={'Date': 'Sun, 19 Apr 2026 10:12:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'expires': '-1', 'nel': '{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}', 'pragma': 'no-cache', 'report-to': '{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=Anu3VEHXXsaKUVp9Gl%2Bg5VyKa5jQGix6r0yjkTPls1s%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1776593537"}],"max_age":3600}', 'reporting-endpoints': 'heroku-nel="https://nel.heroku.com/reports?s=Anu3VEHXXsaKUVp9Gl%2Bg5VyKa5jQGix6r0yjkTPls1s%3D&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;ts=1776593537"', 'Server': 'cloudflare', 'vary': 'Origin, Accept-Encoding', 'via': '2.0 heroku-router', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '1000', 'x-ratelimit-remaining': '998', 'x-ratelimit-reset': '1776593539', 'cf-cache-status': 'MISS', 'CF-RAY': '9eeb214a19308d88-HEL', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={} 
+ </msg>
+<msg time="2026-04-19T13:12:20.216230" level="INFO">C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-04-19T13:12:20.217319" level="INFO">${resp} = &lt;Response [404]&gt;</msg>
+<var>${resp}</var>
+<arg>jsonplaceholder</arg>
+<arg>/invalid</arg>
+<arg>expected_status=anything</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-04-19T13:12:19.783451" elapsed="0.434124"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>404</arg>
+<arg>${resp}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-04-19T13:12:20.218676" elapsed="0.000828"/>
+</kw>
+<status status="PASS" start="2026-04-19T13:12:19.782144" elapsed="0.438209"/>
+</test>
+<status status="PASS" start="2026-04-19T13:12:14.706254" elapsed="5.517111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api Test" id="s1" pass="3" fail="0" skip="0">Api Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

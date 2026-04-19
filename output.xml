@@ -1,100 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-03-24T10:35:53.078705" rpa="false" schemaversion="5">
-<suite id="s1" name="Browser Demo" source="C:\Users\reett\Documents\webkehitys_m\browser_demo.robot">
-<test id="s1-t1" name="Test Web Form" line="6">
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-08T15:12:24.559652" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava6" source="C:\Users\reett\Documents\webkehitys_m\tests\tehtava6.robot">
+<test id="s1-t1" name="Login kryptatuilla tunnuksilla" line="10">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-24T10:35:54.306887" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\browser\\traces\\temp\\ecab5881-3f56-48ff-b5bb-8492c07b077c"}</msg>
-<msg time="2026-03-24T10:35:54.369946" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49441</msg>
-<msg time="2026-03-24T10:35:58.681155" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\browser\\traces\\temp\\ecab5881-3f56-48ff-b5bb-8492c07b077c"}</msg>
+<msg time="2026-04-08T15:12:25.651377" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\browser\\traces\\temp\\8c5e30c8-d07d-4f11-ae11-19732f7a9b62"}</msg>
+<msg time="2026-04-08T15:12:25.693178" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57324</msg>
+<msg time="2026-04-08T15:12:27.110602" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\browser\\traces\\temp\\8c5e30c8-d07d-4f11-ae11-19732f7a9b62"}</msg>
 <arg>chromium</arg>
-<arg>headless=No</arg>
+<arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-24T10:35:54.305104" elapsed="4.376543"/>
+<status status="PASS" start="2026-04-08T15:12:25.650333" elapsed="1.460703"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-24T10:35:59.530729" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
-<msg time="2026-03-24T10:35:59.530902" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<msg time="2026-04-08T15:12:28.117147" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-08T15:12:28.117299" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-24T10:35:58.684929" elapsed="0.846405"/>
+<status status="PASS" start="2026-04-08T15:12:27.115312" elapsed="1.002470"/>
 </kw>
-<kw name="Get Title" owner="Browser">
-<msg time="2026-03-24T10:35:59.562375" level="INFO">Title: 'Web form'</msg>
-<arg>==</arg>
-<arg>Web form</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2026-03-24T10:35:59.532646" elapsed="0.030260"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2026-03-24T10:35:59.567519" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
-<arg>[name="my-text"]</arg>
-<arg>${Username}</arg>
-<arg>delay=0.1 s</arg>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:12:28.120168" level="INFO">Fills the text '***' in the given field.</msg>
+<arg>input[name="username"] &gt;&gt; nth=1</arg>
+<arg>${USERNAME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T10:35:59.564840" elapsed="2.495777"/>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:12:28.118851" elapsed="0.054345"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
-<arg>[name="my-password"]</arg>
-<arg>$Password</arg>
-<arg>delay=0.1 s</arg>
+<arg>input[type="password"] &gt;&gt; nth=1</arg>
+<arg>${PASSWORD}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T10:36:02.062412" elapsed="1.453823"/>
+<status status="FAIL" start="2026-04-08T15:12:28.173621" elapsed="0.116064">ValueError: Direct assignment of values or variables as 'secret' is not allowed. Use special variable syntax ($var instead of ${var}) to prevent variable values from being spoiled.</status>
 </kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2026-03-24T10:36:03.518957" level="INFO">Types the text 'Hello, Robot Framework!
-How are you today?' in the given field.</msg>
-<arg>[name="my-textarea"]</arg>
-<arg>${Message}</arg>
-<arg>delay=0.1 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T10:36:03.517054" elapsed="4.788569"/>
-</kw>
-<kw name="Click With Options" owner="Browser">
-<msg time="2026-03-24T10:36:08.308829" level="INFO">Clicks the element 'button'.</msg>
-<arg>button</arg>
-<arg>delay=2 s</arg>
+<kw name="Click" owner="Browser">
+<arg>text=Login &gt;&gt; nth=1</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T10:36:08.306617" elapsed="2.131689"/>
+<status status="NOT RUN" start="2026-04-08T15:12:28.290247" elapsed="0.000199"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2026-03-24T10:36:10.645348" level="INFO">Text: 'Received!'</msg>
-<arg>id=message</arg>
-<arg>==</arg>
-<arg>Received!</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>text=Logout</arg>
+<arg>visible</arg>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-24T10:36:10.440470" elapsed="0.205287"/>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-08T15:12:28.290740" elapsed="0.000105"/>
 </kw>
-<status status="PASS" start="2026-03-24T10:35:54.302957" elapsed="16.344419"/>
+<msg time="2026-04-08T15:12:28.312404" level="INFO">Switching context to context=bbd458c4-b159-4fdf-ac07-bfdcbcc279a9 in CURRENT</msg>
+<msg time="2026-04-08T15:12:28.329334" level="INFO">Successfully changed active context: context=bbd458c4-b159-4fdf-ac07-bfdcbcc279a9</msg>
+<msg time="2026-04-08T15:12:28.366065" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-04-08T15:12:25.646597" elapsed="2.644522">ValueError: Direct assignment of values or variables as 'secret' is not allowed. Use special variable syntax ($var instead of ${var}) to prevent variable values from being spoiled.</status>
 </test>
-<status status="PASS" start="2026-03-24T10:35:53.082920" elapsed="17.579452"/>
+<status status="FAIL" start="2026-04-08T15:12:24.561940" elapsed="3.805947"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Browser Demo" id="s1" pass="1" fail="0" skip="0">Browser Demo</stat>
+<stat name="Tehtava6" id="s1" pass="0" fail="1" skip="0">Tehtava6</stat>
 </suite>
 </statistics>
 <errors>

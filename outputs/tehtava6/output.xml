@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.3 on win32)" generated="2026-04-08T15:04:35.052319" rpa="false" schemaversion="5">
+<suite id="s1" name="Tehtava6" source="C:\Users\reett\Documents\webkehitys_m\tests\tehtava6.robot">
+<test id="s1-t1" name="Login kryptatuilla tunnuksilla" line="10">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-08T15:04:36.098800" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava6\\browser\\traces\\temp\\649b214b-e567-4c49-8ad5-c7a7883eb135"}</msg>
+<msg time="2026-04-08T15:04:36.135442" level="INFO">Starting Browser process C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:60018</msg>
+<msg time="2026-04-08T15:04:37.505739" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\reett\\Documents\\webkehitys_m\\outputs\\tehtava6\\browser\\traces\\temp\\649b214b-e567-4c49-8ad5-c7a7883eb135"}</msg>
+<arg>chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-08T15:04:36.097336" elapsed="1.408844"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-08T15:04:38.357632" level="INFO">Successfully initialized new page object and opened url: http://localhost:5173/login.html</msg>
+<msg time="2026-04-08T15:04:38.357775" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://localhost:5173/login.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-08T15:04:37.510669" elapsed="0.847379"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:38.359538" level="INFO">Fills the text '***' in the given field.</msg>
+<arg>input[name="username"] &gt;&gt; nth=1</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:38.358547" elapsed="0.055297"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2026-04-08T15:04:38.414924" level="INFO">Fills the text '***' in the given field.</msg>
+<arg>input[type="password"] &gt;&gt; nth=1</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:38.414284" elapsed="0.016141"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-08T15:04:38.431374" level="INFO">Clicks the element 'text=Login &gt;&gt; nth=1'.</msg>
+<arg>text=Login &gt;&gt; nth=1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-08T15:04:38.430784" elapsed="0.593232"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-08T15:04:40.945832" level="INFO">Waited for Element with selector text=Logout at state visible</msg>
+<arg>text=Logout</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-08T15:04:39.025040" elapsed="1.921111"/>
+</kw>
+<msg time="2026-04-08T15:04:40.973740" level="INFO">Switching context to context=e2f3d07f-6ae3-4de5-83b9-726857333a83 in CURRENT</msg>
+<msg time="2026-04-08T15:04:40.984282" level="INFO">Successfully changed active context: context=e2f3d07f-6ae3-4de5-83b9-726857333a83</msg>
+<msg time="2026-04-08T15:04:41.015172" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2026-04-08T15:04:36.092303" elapsed="4.854482"/>
+</test>
+<status status="PASS" start="2026-04-08T15:04:35.054618" elapsed="5.962352"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tehtava6" id="s1" pass="1" fail="0" skip="0">Tehtava6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

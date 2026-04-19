@@ -83,8 +83,31 @@ Tässä tehtävässä tein Robot Framework -testin, joka simuloi käyttäjän to
 
 Testissä käytettiin BrowserLibrarya selaimen ohjaamiseen.
 
+- [Loki](./outputs/tehtava4/log.html)
+- [Raportti](./outputs/tehtava4/report.html)
+
 ## Tehtävä 5: 
 Tässä tehtävässä siirsin käyttäjätunnuksen ja salasanan pois testikoodista .env-tiedostoon. Näin tunnukset eivät näy suoraan koodissa. Tein Python-tiedoston (env_helper.py), joka lukee arvot .env-tiedostosta. Robot Framework -testi käyttää näitä arvoja kirjautumiseen. Tämä parantaa tietoturvaa ja helpottaa tunnusten hallintaa.
 
+- [Loki](./outputs/tehtava5/log.html)
+- [Raportti](./outputs/tehtava5/report.html)
+
 ## Tehtävä 6:
 Tässä tehtävässä käytin CryptoLibrarya tunnusten salaamiseen. Käyttäjätunnus ja salasana kryptattiin CryptoClient-työkalulla ja lisättiin testiin muodossa crypt:... Testin aikana CryptoLibrary purkaa arvot automaattisesti ja käyttää niitä kirjautumiseen. Tällä tavalla tunnukset eivät ole selkokielisinä testikoodissa.
+
+- [Loki](./outputs/tehtava6/log.html)
+- [Raportti](./outputs/tehtava6/report.html)
+
+## Tehtävä 7:
+Raportti- ja lokitiedostot tarkastettu, että löytyvät outputs kansioista, ja 2 ja 3 tehtävien kohdalla korjattu.
+
+## Tehtävä 8:
+Ohjeiden mukaisesti tehty raportti- ja lokitiedostot luettavaksi sivuston kautta
+
+## Tehtävä 9:
+Tehty testi, joka testaa taustapalvelimen toimintaa. Seurattu ohjeita, ja tuntui helpolta.
+- [Loki](./outputs/task9/log.html)
+- [Raportti](./outputs/task9/report.html)
+
+## Tehtävä 10:
+Kaikki tehtävät raportoituna markdown tiedostossa
