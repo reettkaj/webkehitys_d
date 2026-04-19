@@ -69,9 +69,14 @@ Ajettu kirjautumistesti onnistuneesti; tehtävä tehtiin seuraamalla yksilöteht
 
 <img width="1878" height="955" alt="image" src="https://github.com/user-attachments/assets/6aba4e6f-ce92-4497-be56-e3955dd3598c" />
 
+- [Loki](./outputs/task2/log.html)
+- [Raportti](./outputs/task2/report.html)
+
 
 ## Tehtävä 3:
 Tutkittu browser library ja tehty testaukset, seurattu ohjeita yksilötehtävien ohjeiden mukaan. Tietojen salaus ja salausavainten generointi tehty ohjeiden mukaisesti. Tehtävien tekeminen tuntui selkeältä ja ymmärrettävältä.
+- [Loki](./outputs/task3/log.html)
+- [Raportti](./outputs/task3/report.html)
 
 ## Tehtävä 4:
 Tässä tehtävässä tein Robot Framework -testin, joka simuloi käyttäjän toimintaa sovelluksessa. Testi avaa kirjautumissivun, kirjautuu sisään, siirtyy päiväkirjasivulle ja täyttää lomakkeen. Lopuksi testi lisää uuden päiväkirjamerkinnän ja tarkistaa, että se onnistui.
