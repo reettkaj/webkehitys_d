@@ -1,0 +1,13 @@
+{"level":30,"time":"2026-04-19T09:07:50.601Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Listening on 127.0.0.1:52777"}
+{"level":30,"time":"2026-04-19T09:07:50.912Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-19T09:07:53.053Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-19T09:07:53.054Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-19T09:07:53.055Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-19T09:07:53.069Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-19T09:07:53.071Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@2ee5e095986ad695f7bd647226eb6f67\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0ab54843-bad8-436f-b660-340995548706\"}"}
+{"level":30,"time":"2026-04-19T09:07:53.138Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=cfb1781f-1e96-4476-aae9-e76ffaf73e6b to 10000"}
+{"level":30,"time":"2026-04-19T09:07:53.138Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=cfb1781f-1e96-4476-aae9-e76ffaf73e6b"}
+{"level":30,"time":"2026-04-19T09:07:53.830Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-19T09:07:53.830Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-19T09:07:54.627Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-19T09:08:02.395Z","pid":12608,"hostname":"DESKTOP-9O5LOFS","msg":"Removed page=0d06de0b-35df-437a-b74d-96cfcd23d033 from context=cfb1781f-1e96-4476-aae9-e76ffaf73e6b page stack"}

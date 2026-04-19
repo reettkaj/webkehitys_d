@@ -1,0 +1,851 @@
+{"level":30,"time":"2026-04-19T09:14:30.855Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Listening on 127.0.0.1:51515"}
+{"level":30,"time":"2026-04-19T09:14:31.325Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-19T09:14:32.217Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-19T09:14:32.218Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-19T09:14:32.219Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-19T09:14:32.241Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-19T09:14:32.243Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@185b95e9541f44b22ee63f58a805eacc\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=69252fa9-7bb8-4eec-abda-d3b88132a36e\"}"}
+{"level":30,"time":"2026-04-19T09:14:32.301Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Setting default timeout for context context=5a8b5e23-aa79-4b3d-ac98-e08917a7963f to 10000"}
+{"level":30,"time":"2026-04-19T09:14:32.302Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active context: context=5a8b5e23-aa79-4b3d-ac98-e08917a7963f"}
+{"level":30,"time":"2026-04-19T09:14:32.699Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-19T09:14:32.699Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Changed active page"}
+{"level":30,"time":"2026-04-19T09:14:33.244Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-19T09:14:33.284Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:33.285Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-04-19T09:14:35.854Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:35.872Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:35.873Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-04-19T09:14:37.342Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:37.349Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:37.349Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-04-19T09:14:42.058Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-19T09:14:42.066Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-19T09:14:42.066Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2026-04-19T09:14:42.340Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Removed page=65739abe-75f2-405e-bf06-16af87bf192c from context=5a8b5e23-aa79-4b3d-ac98-e08917a7963f page stack"}
+{"level":40,"time":"2026-04-19T09:14:42.344Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Supress locator.click: Target page, context or browser has been closed error"}
+{"level":30,"time":"2026-04-19T09:14:42.344Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"End of node method click"}
+{"level":30,"time":"2026-04-19T09:14:42.367Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.369Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.404Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.405Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.420Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.420Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.435Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.435Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.450Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.450Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.464Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.464Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.479Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.479Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.493Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.493Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.509Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.509Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.524Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.525Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.541Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.541Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.556Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.557Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.572Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.572Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.593Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.593Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.612Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.613Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.632Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.633Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.655Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.656Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.676Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.677Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.697Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.698Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.720Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.721Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.741Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.741Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.759Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.760Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.781Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.782Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.801Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.802Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.822Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.823Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.841Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.842Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.859Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.860Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.878Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.879Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.900Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.900Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.920Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.921Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.948Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.949Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.970Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.971Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:42.990Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:42.990Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.009Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.010Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.028Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.029Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.046Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.047Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.069Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.069Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.085Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.085Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.101Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.102Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.118Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.119Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.135Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.135Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.150Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.151Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.169Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.170Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.189Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.190Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.208Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.208Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.227Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.228Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.244Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.245Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.263Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.263Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.286Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.287Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.306Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.306Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.324Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.325Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.345Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.346Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.366Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.367Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.386Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method getText"}
+================= Original suppressed error =================
+Error: Could not find active page
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at findLocator (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10954:3)
+    at getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:12068:25)
+    at PlaywrightServer.getText (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.387Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  getText"}
+{"level":30,"time":"2026-04-19T09:14:43.407Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:10997:11)
+    at takeScreenshot (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:11158:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\index.js:13690:34)
+    at Object.onReceiveHalfClose (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\reett\Documents\webkehitys_m\.venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-04-19T09:14:43.409Z","pid":1528,"hostname":"DESKTOP-9O5LOFS","msg":"Error of node method  takeScreenshot"}
